@@ -1,0 +1,44 @@
+.list {
+  width: 100%;
+  padding: 3rem;
+  &_name {
+    color: #ecf0f1;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #ffc371;
+    margin-bottom: 20px;
+  }
+  &_grid {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 2px;
+      border-radius: 5px;
+      background: #7f8c8d;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 50px;
+    }
+  }
+  .cards {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    .page-content {
+      display: grid;
+      grid-gap: 1rem;
+      padding: 1rem;
+      max-width: 1024px;
+      margin: 0 auto;
+
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (min-width: 800px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}

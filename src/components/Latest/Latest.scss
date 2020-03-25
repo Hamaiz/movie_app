@@ -1,0 +1,89 @@
+@import "../../Styles/carousel";
+
+.latest {
+  position: relative;
+  height: 100%;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        background: #34495e;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.4;
+      }
+    }
+    &:hover {
+      .swiper-button-next,
+      .swiper-button-prev {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 0;
+      visibility: hidden;
+      width: 44px;
+      transition: all 0.3s ease;
+    }
+    .swiper-button-next {
+      transform: translateX(50px);
+    }
+    .swiper-button-prev {
+      transform: translateX(-50px);
+    }
+  }
+
+  &_title {
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    bottom: 150px;
+    left: 30px;
+    font-size: 40px;
+    text-shadow: 1px 1px #000;
+  }
+  &_desc {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 80px;
+    left: 30px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-shadow: 1px 1px#000;
+  }
+  &_rating {
+    color: #fff;
+    position: absolute;
+    bottom: 110px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 1px 1px #000;
+  }
+  &_name {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 2px 2px 1px #f39c12;
+  }
+}
