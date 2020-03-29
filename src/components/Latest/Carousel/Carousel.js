@@ -11,7 +11,7 @@ const Carousel = ({ title, img, desc, rating }) => {
             <div className="latest_title" data-swiper-parallax="-500">{title}</div>
             <div className="latest_desc" data-swiper-parallax="-300">{desc}</div>
             <div className="latest_rating" data-swiper-parallax="-400">
-                <span class="latest_name">Latest </span>| Rating: {rating} | Genre: Mystry
+                <span className="latest_name">Latest </span>| Rating: {rating} | Genre: Mystry
             </div>
         </div>
     )

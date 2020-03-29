@@ -2,7 +2,9 @@ $cs: #ff5f6d;
 
 .preloader {
   position: fixed;
-  background-color: #7f8c8d;
+  // background-color: #7f8c8d;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+
   z-index: 9999999;
   height: 100%;
   width: 100%;

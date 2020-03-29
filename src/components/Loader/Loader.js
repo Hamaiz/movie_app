@@ -3,14 +3,17 @@ import "./Loader.scss"
 
 const Loader = () => {
 
+
     useEffect(() => {
-        window.addEventListener("load", _ => {
-            setTimeout(function () {
-                const preLoader = document.querySelector(".preloader")
-                preLoader.classList.add("loaded")
-            }, 1000)
-        })
+        // window.addEventListener("load", _ => {
+        setTimeout(function () {
+            const preLoader = document.querySelector(".preloader")
+            preLoader.classList.add("loaded")
+            document.body.style.overflowY = "visible"
+        }, 2000)
+        // })
     }, [])
+
 
     return (
         <div>
@@ -30,6 +33,7 @@ const Loader = () => {
             </div>
         </div>
     )
+
 
 }
 

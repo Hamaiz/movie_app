@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from "react-router-dom"
+
 import "./Card.scss"
 
-const Card = ({ title, img, rating, desc, genreId, genres }) => {
+const Card = ({ id, title, img, rating, desc, genreId, genres }) => {
     const imgUrl = "https://image.tmdb.org/t/p/w300"
     const cardStyle = {
         backgroundImage: `url(${imgUrl + img})`
@@ -15,7 +17,9 @@ const Card = ({ title, img, rating, desc, genreId, genres }) => {
                 <div className="card_rating">{rating}</div>
                 <h2 className="card_title">{title}</h2>
                 <p className="card_copy">{desc}</p>
-                <a href="/" className="card_btn">View</a>
+                <Link to={`details/${id}`}>
+                    <button className="card_btn">View</button>
+                </Link>
             </div>
         </div>
     )

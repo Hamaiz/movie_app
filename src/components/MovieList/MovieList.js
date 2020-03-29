@@ -29,6 +29,7 @@ const MovieList = ({ name, genre, movies }) => {
                             movieSplice.map((movie, i) => (
                                 <Card
                                     key={i}
+                                    id={movie.id}
                                     title={movie.title}
                                     img={movie.poster_path}
                                     rating={movie.vote_average}

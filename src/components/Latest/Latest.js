@@ -7,7 +7,6 @@ import Carousel from "./Carousel/Carousel"
 
 const Latest = ({ movies }) => {
     const movieSlice = movies.slice(9, 13)
-    console.log(movieSlice);
 
     const swiper = new Swiper(".swiper-container", {
         effect: 'coverflow',

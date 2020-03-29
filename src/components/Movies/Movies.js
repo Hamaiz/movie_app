@@ -18,38 +18,34 @@ const Movies = () => {
     const genreAPI = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`
 
     //State
-    // const [latest, setLatest] = useState([])
     const [upcoming, setUpcoming] = useState([])
     const [popular, setPopular] = useState([])
     const [top, setTop] = useState([])
     const [playing, setPlaying] = useState([])
     const [genre, setGenre] = useState([])
+    const ENDPOINT = "localhost:3000"
 
 
     //Effects
     useEffect(() => {
-        // getMovies(latestAPI, setLatest)
         getMovies(upcomingAPI, setUpcoming)
         getMovies(popularAPI, setPopular)
         getMovies(topAPI, setTop)
         getMovies(nowplayingAPI, setPlaying)
         getMovies(genreAPI, setGenre)
         // eslint-disable-next-line
-    }, [])
+    }, [ENDPOINT])
 
     const getMovies = async (api, setState) => {
         const response = await fetch(api)
         const data = await response.json()
         const result = data.results
         setState(result)
+
     }
 
-    //Latest
-    // const latestSlice = playing.slice(9, 13)
-
-
     return (
-        <div>
+        <div >
             <Loader />
             <Header />
             <Latest
