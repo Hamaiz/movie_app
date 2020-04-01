@@ -2,13 +2,14 @@ import React from 'react'
 import Swiper from "swiper"
 import "./Latest.scss"
 
+
 //Carousel
 import Carousel from "./Carousel/Carousel"
 
 const Latest = ({ movies }) => {
     const movieSlice = movies.slice(9, 13)
 
-    const swiper = new Swiper(".swiper-container", {
+    new Swiper(".swiper-container", {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -46,6 +47,7 @@ const Latest = ({ movies }) => {
                             img={movie.backdrop_path}
                             desc={movie.overview}
                             rating={movie.vote_average}
+                            iden={movie.id}
                         />
 
                     ))}

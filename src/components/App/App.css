@@ -6,6 +6,9 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  background: #2c3e50;
+  background: #0f2027;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
 }

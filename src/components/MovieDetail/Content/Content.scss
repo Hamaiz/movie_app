@@ -1,3 +1,5 @@
+@import "../../../Styles/responsive";
+
 .aside {
   &_overlay {
     position: fixed;
@@ -9,7 +11,12 @@
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    z-index: 9;
+    z-index: 10;
+    @media #{$tab} {
+      left: 0;
+      bottom: 0;
+    }
+
     &:target {
       visibility: visible;
       opacity: 1;
@@ -25,6 +32,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media #{$tab} {
+        margin: 30px auto;
+      }
     }
     &_close {
       position: absolute;
@@ -43,8 +53,13 @@
     }
     &_content {
       max-height: 30%;
-      overflow: auto;
+      overflow: hidden;
       color: #fff;
+      img {
+        display: inline-block;
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
   }
 }

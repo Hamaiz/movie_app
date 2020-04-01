@@ -4,19 +4,7 @@ import "./MovieList.scss"
 //Card
 import Card from "./Cards/Card"
 
-const MovieList = ({ name, genre, movies }) => {
-    // console.log(upcoming)
-    // console.log(...genre)
-    // const genId = genre.map(gen => {
-    // return (
-    // `${gen.id}`
-    // )
-    // })
-    // console.log(genId[3]);
-    // console.log(genMap.id);
-
-    // const upcomingMap = upcoming.map()
-
+const MovieList = ({ name, movies }) => {
     const movieSplice = movies.slice(0, 8)
 
     return (
@@ -35,7 +23,6 @@ const MovieList = ({ name, genre, movies }) => {
                                     rating={movie.vote_average}
                                     desc={movie.overview}
                                     genreId={movie.genre_ids}
-                                // genres={genMap}
                                 />
                             ))}
                     </main>
