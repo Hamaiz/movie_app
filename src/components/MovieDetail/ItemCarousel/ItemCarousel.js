@@ -31,11 +31,11 @@ const ItemCarousel = ({ quote, trailer }) => {
                 spaceBetween: 20
             },
             1200: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
             1600: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 20
             }
         }

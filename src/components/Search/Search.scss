@@ -29,10 +29,34 @@
         color: #fff;
         font-weight: 700;
         letter-spacing: 0.03em;
-        &:first-child,
-        &:last-child {
+        // &:first-child,
+        // &:last-child {
+        //     padding: 0 16px;
+        //     margin: 0 12px 6px;
+        // }
+        &_but {
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 250ms;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0 3px 6px;
+            height: 38px;
+            min-width: 38px;
+            border-radius: 38px;
+            border: 2px solid #fff;
+            line-height: 38px;
+            padding: 0;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.03em;
             padding: 0 16px;
             margin: 0 12px 6px;
+            cursor: pointer;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
         }
 
         &:last-child,

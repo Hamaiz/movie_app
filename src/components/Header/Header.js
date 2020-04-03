@@ -56,20 +56,20 @@ const Header = () => {
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/discover">Discover</a>
                     </li>
                 </ul>
-            </div >
+            </div>
             <div className="containerDown">
                 <div className="header_img_d">
                     Movie Eye
-                </div>
+                     </div>
                 <ul className="header_list_d">
                     <li>
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/discover">Discover</a>
                     </li>
                 </ul>
             </div>

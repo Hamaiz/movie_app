@@ -15,11 +15,9 @@ const Search = ({ match, location }) => {
     const { id } = match.params
     const { search } = location
     const number = (search === "") ? "" : String(search.match(/\d+/g).map(Number))
-    // console.log(number)
 
 
     //States
-    // const [page, setPage] = useState(1)
     const [current, setCurrent] = useState(1)
     const [total, setTotal] = useState("")
     const [query, setQuery] = useState([])
@@ -39,8 +37,6 @@ const Search = ({ match, location }) => {
 
         //eslint-disable-next-line
     }, [id, search])
-
-    // setPage(number)
 
     const getSearch = async () => {
         const response = await fetch(searchAPI)
@@ -62,6 +58,8 @@ const Search = ({ match, location }) => {
             </Link >
         )
     }
+    const totalMin = String(Math.min(total, 10))
+
 
     return (
         <div>
@@ -93,15 +91,24 @@ const Search = ({ match, location }) => {
                     </div>
                 </div>
             </div>
-            <div className={``}></div>
-            <div className="content_detail_pagination pagination" actpage="1">
-                <Link to={`?page=${number - 1}`} className="pagination_i">
-                    <span>prev</span>
-                </Link>
+            <div className="content_detail_pagination pagination">
+                {
+                    (number === "1" || number === "") ?
+                        ""
+                        :
+                        <Link to={`?page=${number - 1}`} className="pagination_i_but">
+                            <span>prev</span>
+                        </Link>
+                }
                 {pagination}
-                <Link to={`?page=${(number) - (-1)}`} className="pagination_i">
-                    <span>next</span>
-                </Link>
+                {
+                    (number === totalMin) ?
+                        ""
+                        :
+                        <Link to={`?page=${(number) - (-1)}`} className="pagination_i_but">
+                            <span>next</span>
+                        </Link>
+                }
             </div>
             <Footer />
         </div >
