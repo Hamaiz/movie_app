@@ -10,3 +10,11 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
+
+  // "engines": {
+  //   "node": "12.14.1",
+  //   "npm": "6.14.1"
+  // },
+  // "resolutions": {
+  //   "@babel/preset-env": "7.5.5"
+  // },

@@ -85,7 +85,7 @@ const MovieDetail = ({ match }) => {
 
 
     //Consts
-    const { backdrop_path, poster_path, homepage, overview, status, title, vote_average, release_date } = detail
+    const { backdrop_path, poster_path, homepage, overview, title, vote_average, release_date } = detail
     const releaseDate = String(release_date).slice(0, 4)
     const creditSlice = credit.slice(0, 4)
 
@@ -100,10 +100,6 @@ const MovieDetail = ({ match }) => {
     const descIcon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M6 8l18 32L42 8H6zm6.75 4h22.5L24 32 12.75 12z" /></svg>
 
     // JS
-    // const moreButton = document.querySelector(".detail_content_data_button")
-    // moreButton.addEventListener("click", _ => {
-    //     document.body.overflowY = "hidden"
-    // })
 
 
     //I WAS FEELING LAZY SO...
@@ -148,6 +144,7 @@ const MovieDetail = ({ match }) => {
                             <div id="popup1" className="overlay">
                                 <div className="popup">
                                     <h2>Cast</h2>
+                                    {/* eslint-disable-next-line */}
                                     <a href="#" className="close">&times;</a>
                                     <div className="popup_content">
                                         {

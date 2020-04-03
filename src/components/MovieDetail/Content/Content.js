@@ -13,6 +13,7 @@ const Content = ({ bigPic, post }) => {
                     return (
                         <div id={picId} className="aside_overlay" key={i}>
                             <div className="aside_overlay_popup">
+                                {/* eslint-disable-next-line */}
                                 <a href="#" className="aside_overlay_close">&times;</a>
                                 <div className="aside_overlay_content">
                                     <img src={picUrl} alt="" />
@@ -30,6 +31,7 @@ const Content = ({ bigPic, post }) => {
                     return (
                         <div id={picId} className="aside_overlay" key={i}>
                             <div className="aside_overlay_popup">
+                                {/* eslint-disable-next-line */}
                                 <a href="#" className="aside_overlay_close">&times;</a>
                                 <div className="aside_overlay_content">
                                     <img src={picUrl} alt="" />
