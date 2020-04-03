@@ -149,13 +149,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       transition: bottom 0.5s ease-in-out;
-      // display: none;
       align-items: center;
       &.isActive {
         bottom: 0;
         transition: bottom 0.5s ease-in-out;
-      }
-      @media #{$tab} {
       }
       .header_img_d {
         margin-left: 20px;
@@ -173,7 +170,7 @@
         grid-area: 1/2;
         justify-self: end;
         list-style-type: none;
-        margin-right: 20px;
+        margin-right: 5px;
         li {
           display: inline-block;
           margin-left: 20px;
