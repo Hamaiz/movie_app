@@ -8,17 +8,13 @@ import Loader from "../Loader/Loader"
 
 const Movies = () => {
     //API KEY
-    const API_KEY = process.env.REACT_APP_API_KEY
+    // const API_KEY = process.env.REACT_APP_API_KEY
 
     //Fetching links
-    // const upcomingAPI = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`
-    const upcomingAPI = "https://api.themoviedb.org/3/movie/upcoming?api_key=" + process.env.REACT_APP_API_KEY
-    // const popularAPI = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
-    const popularAPI = "https://api.themoviedb.org/3/movie/popular?api_key=" + process.env.REACT_APP_API_KEY
-    // const topAPI = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`
-    const topAPI = "https://api.themoviedb.org/3/movie/top_rated?api_key=" + process.env.REACT_APP_API_KEY
-    // const nowplayingAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`
-    const nowplayingAPI = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + process.env.REACT_APP_API_KEY
+    const upcomingAPI = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}`
+    const popularAPI = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}`
+    const topAPI = `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}`
+    const nowplayingAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_API_KEY}`
 
 
 
