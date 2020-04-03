@@ -21,6 +21,7 @@ const Movies = () => {
     const nowplayingAPI = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + API_KEY
 
 
+
     //State
     const [upcoming, setUpcoming] = useState([])
     const [popular, setPopular] = useState([])
