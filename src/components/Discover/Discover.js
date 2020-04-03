@@ -10,7 +10,6 @@ import Card from "../MovieList/Cards/Card"
 import "./Discover.scss"
 
 const Discover = () => {
-    const API_KEY = process.env.REACT_APP_API_KEY
 
     //States
     const [sort, setSort] = useState("popularity.desc")
@@ -24,7 +23,7 @@ const Discover = () => {
     const [query, setQuery] = useState(false)
 
     //API
-    const discoverAPI = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&sort_by=${sort}&include_video=false&page=${page}&${year ? `year=${year}` : ""}&${vote ? `vote_average.gte=${vote}` : ""}&${people ? `with_people=${people}` : ""}&${genre ? `with_genres=${genre}` : ""}`
+    const discoverAPI = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&sort_by=${sort}&include_video=false&page=${page}&${year ? `year=${year}` : ""}&${vote ? `vote_average.gte=${vote}` : ""}&${people ? `with_people=${people}` : ""}&${genre ? `with_genres=${genre}` : ""}`
 
 
     //EFFECT

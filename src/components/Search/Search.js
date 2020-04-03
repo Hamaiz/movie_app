@@ -11,7 +11,6 @@ import Footer from "../Footer/Footer"
 import "./Search.scss"
 
 const Search = ({ match, location }) => {
-    const API_KEY = process.env.REACT_APP_API_KEY
     const { id } = match.params
     const { search } = location
     const number = (search === "") ? "" : String(search.match(/\d+/g).map(Number))
@@ -27,9 +26,8 @@ const Search = ({ match, location }) => {
 
 
     //API
-    const searchAPI = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${id}&page=${(number === "") ? 1 : number}`
+    const searchAPI = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${id}&page=${(number === "") ? 1 : number}`
 
-    // https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg
 
     //useEffect
     useEffect(() => {

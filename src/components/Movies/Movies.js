@@ -8,7 +8,6 @@ import Loader from "../Loader/Loader"
 
 const Movies = () => {
     //API KEY
-    // const API_KEY = process.env.REACT_APP_API_KEY
 
     //Fetching links
     const upcomingAPI = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}`
