@@ -2,7 +2,6 @@ import React from 'react'
 import "./Content.scss"
 
 const Content = ({ bigPic, post }) => {
-    // console.log(post);
 
     return (
         <div className="aside">
