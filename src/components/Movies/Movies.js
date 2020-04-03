@@ -11,18 +11,21 @@ const Movies = () => {
     const API_KEY = process.env.REACT_APP_API_KEY
 
     //Fetching links
-    const upcomingAPI = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`
-    const popularAPI = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
-    const topAPI = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`
-    const nowplayingAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`
-    const genreAPI = `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`
+    // const upcomingAPI = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`
+    const upcomingAPI = "https://api.themoviedb.org/3/movie/upcoming?api_key=" + API_KEY
+    // const popularAPI = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
+    const popularAPI = "https://api.themoviedb.org/3/movie/popular?api_key=" + API_KEY
+    // const topAPI = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`
+    const topAPI = "https://api.themoviedb.org/3/movie/top_rated?api_key=" + API_KEY
+    // const nowplayingAPI = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`
+    const nowplayingAPI = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + API_KEY
+
 
     //State
     const [upcoming, setUpcoming] = useState([])
     const [popular, setPopular] = useState([])
     const [top, setTop] = useState([])
     const [playing, setPlaying] = useState([])
-    const [genre, setGenre] = useState([])
     const ENDPOINT = "localhost:3000"
 
 
@@ -32,7 +35,6 @@ const Movies = () => {
         getMovies(popularAPI, setPopular)
         getMovies(topAPI, setTop)
         getMovies(nowplayingAPI, setPlaying)
-        getMovies(genreAPI, setGenre)
         // eslint-disable-next-line
     }, [ENDPOINT])
 
@@ -49,27 +51,22 @@ const Movies = () => {
             <Loader />
             <Header />
             <Latest
-                genre={genre}
                 movies={playing}
             />
             <MovieList
                 name="Upcoming"
-                genre={genre}
                 movies={upcoming}
             />
             <MovieList
                 name="Now Playing"
-                genre={genre}
                 movies={playing}
             />
             <MovieList
                 name="Popular"
-                genre={genre}
                 movies={popular}
             />
             <MovieList
                 name="Top Rated"
-                genre={genre}
                 movies={top}
             />
             <Footer />
