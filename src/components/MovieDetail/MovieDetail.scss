@@ -100,7 +100,7 @@ $shadow: 1px 1px 1px #000;
         top: 7%;
       }
       @media #{$mid_device} {
-        top: 7%;
+        top: 5%;
       }
     }
 
@@ -259,6 +259,7 @@ $shadow: 1px 1px 1px #000;
       }
       @media #{$mid_device} {
         width: 400px;
+        margin-top: 0px;
       }
       span {
         text-shadow: none;
@@ -443,7 +444,7 @@ $shadow: 1px 1px 1px #000;
       height: 350px;
       @media #{$mid_device} {
         width: 700px;
-        height: 250px;
+        height: 220px;
         margin-top: 18px;
       }
       @media #{$large_device} {
