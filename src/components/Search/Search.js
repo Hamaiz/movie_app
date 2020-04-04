@@ -63,7 +63,7 @@ const Search = ({ match, location }) => {
         <div>
             <Loader />
             <Header />
-            <div className="list">
+            <div className="list mt12">
                 <div className="list_grid">
                     <div className="cards">
                         <main className="page-content">

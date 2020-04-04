@@ -99,6 +99,9 @@ $shadow: 1px 1px 1px #000;
       @media #{$large_device} {
         top: 7%;
       }
+      @media #{$mid_device} {
+        top: 7%;
+      }
     }
 
     &_title {
@@ -109,6 +112,9 @@ $shadow: 1px 1px 1px #000;
       grid-area: 1/1;
       width: 400px;
       @media #{$large_device} {
+        font-size: 40px;
+      }
+      @media #{$mid_device} {
         font-size: 40px;
       }
     }
@@ -124,6 +130,9 @@ $shadow: 1px 1px 1px #000;
         margin-top: 20px;
       }
       @media #{$large_device} {
+        margin-top: 15px;
+      }
+      @media #{$mid_device} {
         margin-top: 15px;
       }
       span {
@@ -199,6 +208,10 @@ $shadow: 1px 1px 1px #000;
         font-weight: 400 !important;
       }
       @media #{$large_device} {
+        font-weight: 400 !important;
+        font-size: 18px !important;
+      }
+      @media #{$mid_device} {
         font-weight: 400 !important;
         font-size: 18px !important;
       }
@@ -284,6 +297,9 @@ $shadow: 1px 1px 1px #000;
       top: 11%;
       right: 10%;
       @media #{$large_device} {
+        top: 7%;
+      }
+      @media #{$mid_device} {
         top: 7%;
       }
 

@@ -2,15 +2,15 @@ $cs: #ff5f6d;
 
 .preloader {
   position: fixed;
-  // background-color: #7f8c8d;
   background: linear-gradient(to right, #ff5f6d, #ffc371);
-
   z-index: 9999999;
   height: 100%;
   width: 100%;
   transition: 0.2s all ease;
   transition-delay: 0.5s;
   cursor: context-menu;
+  top: 0;
+  left: 0;
 
   &:before,
   &:after {

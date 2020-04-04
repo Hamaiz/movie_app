@@ -1,5 +1,8 @@
 @import "../../Styles/responsive";
 
+.mt12 {
+    margin-top: 150px;
+}
 .pagination {
     position: relative;
     text-align: center;
@@ -29,11 +32,6 @@
         color: #fff;
         font-weight: 700;
         letter-spacing: 0.03em;
-        // &:first-child,
-        // &:last-child {
-        //     padding: 0 16px;
-        //     margin: 0 12px 6px;
-        // }
         &_but {
             font-size: 14px;
             text-decoration: none;
