@@ -104,7 +104,7 @@ const MovieDetail = ({ match }) => {
 
     //I WAS FEELING LAZY SO...
     return (
-        <div>
+        <div className="h-100">
             <Loader />
             <div className="detail">
 
