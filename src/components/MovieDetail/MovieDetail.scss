@@ -62,7 +62,7 @@ $shadow: 1px 1px 1px #000;
       top: 0;
     }
     z-index: 10;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     overflow-x: hidden;
     color: #fff;
     &::-webkit-scrollbar {
@@ -90,8 +90,27 @@ $shadow: 1px 1px 1px #000;
     top: 0;
     left: 25%;
     height: 100%;
+    // overflow: hidden;
+    // overflow-y: scroll;
+    overflow-x: hidden;
     width: 75%;
 
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #737373;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #a6a6a6;
+    }
     &_inner {
       position: absolute;
       top: 7%;
@@ -110,11 +129,13 @@ $shadow: 1px 1px 1px #000;
       font-weight: bold;
       text-shadow: 2px 2px 1px #000;
       grid-area: 1/1;
-      width: 400px;
+      width: 500px;
       @media #{$large_device} {
+        width: 400px;
         font-size: 40px;
       }
       @media #{$mid_device} {
+        width: 400px;
         font-size: 40px;
       }
     }
@@ -199,7 +220,7 @@ $shadow: 1px 1px 1px #000;
     }
     &_data {
       color: #eaeaea !important;
-      font-size: 25px !important;
+      font-size: 18px !important;
       display: inline;
       word-spacing: 3px;
       font-weight: 500 !important;
@@ -230,7 +251,7 @@ $shadow: 1px 1px 1px #000;
         content: "";
       }
       &_button {
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 500;
         color: #eaeaee;
         text-decoration: none;
@@ -271,7 +292,7 @@ $shadow: 1px 1px 1px #000;
       }
       data {
         color: #eaeaea;
-        font-size: 23px;
+        font-size: 18px;
         display: inline;
         word-spacing: 3px;
         font-weight: 500;
@@ -310,22 +331,22 @@ $shadow: 1px 1px 1px #000;
 
       &_rating {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         text-shadow: 1px 1px 1px red;
         margin-top: 10px;
         @media #{$mid_device} {
-          font-size: 23px !important;
+          font-size: 20px !important;
         }
         @media #{$large_device} {
-          font-size: 23px !important;
+          font-size: 20px !important;
         }
 
         span {
           text-shadow: none;
           font-weight: bold;
           color: #999999;
-          font-size: 30px;
+          font-size: 18px;
           text-shadow: $shadow;
           @media #{$mid_device} {
             font-size: 16px;
@@ -350,7 +371,7 @@ $shadow: 1px 1px 1px #000;
           text-shadow: none;
           font-weight: bold;
           color: #999999;
-          font-size: 30px;
+          font-size: 18px;
           text-shadow: $shadow;
           @media #{$mid_device} {
             font-size: 16px;
@@ -361,7 +382,7 @@ $shadow: 1px 1px 1px #000;
         }
         &_n {
           color: #eaeaea;
-          font-size: 25px !important;
+          font-size: 20px !important;
           font-weight: 500;
           word-spacing: 2px;
           text-shadow: $shadow;
@@ -381,7 +402,7 @@ $shadow: 1px 1px 1px #000;
       }
     }
     &_descrtiption {
-      margin: 0 auto;
+      margin: 20px auto;
       margin-top: 20px;
       color: #fff;
       width: 1000px;
@@ -398,11 +419,12 @@ $shadow: 1px 1px 1px #000;
 
       &_icon {
         display: flex;
+        margin-bottom: 10px;
       }
       svg {
         fill: #888888;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         @media #{$mid_device} {
           width: 50px;
           height: 50px;
@@ -413,7 +435,7 @@ $shadow: 1px 1px 1px #000;
         }
       }
       &_n {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         margin-top: 6px;
         @media #{$mid_device} {
@@ -428,7 +450,7 @@ $shadow: 1px 1px 1px #000;
       &_o {
         color: #fff;
         text-shadow: $shadow;
-        font-size: 25px;
+        font-size: 16px;
         font-weight: 500;
         @media #{$mid_device} {
           font-weight: 400;

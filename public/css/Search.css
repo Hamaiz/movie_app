@@ -1,0 +1,82 @@
+.mt12 {
+  margin-top: 150px;
+}
+
+.pagination {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 6;
+  margin: 50px 0;
+}
+
+@media (max-width: 991px) {
+  .pagination {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination_i {
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 38px;
+  border: 2px solid #fff;
+  line-height: 38px;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.pagination_i_but {
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 38px;
+  border: 2px solid #fff;
+  line-height: 38px;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0 16px;
+  margin: 0 12px 6px;
+  cursor: pointer;
+}
+
+.pagination_i_but:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pagination_i:last-child, .pagination_i:nth-child(2), .pagination_i:nth-last-child(2) {
+  display: inline-block;
+}
+
+.pagination_i:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pagination .active {
+  background-color: #000;
+  color: #fff;
+}
